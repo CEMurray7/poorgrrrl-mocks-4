@@ -1,0 +1,21 @@
+{
+  "name": "react-simple-modal",
+  "description": null,
+  "version": "0.0.0",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "react-jss": "^7.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

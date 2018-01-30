@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'game_over';
+  src: local('game_over'), url(game_over.ttf) format('ttf')
+}
+body {
+  font-family: 'game_over';
+  background-color: black;
+  color: #941100;
+  font-size: 36px;
+}
