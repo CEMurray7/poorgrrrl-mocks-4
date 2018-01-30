@@ -2,12 +2,12 @@ export default {
   // Some global styles
   '@global': {
     html: {
-      fontSize: '16px',
+      fontSize: '48px',
       boxSizing: 'border-box',
     },
     '@font-face': {
-      fontFamily: 'game_over',
-      src: "local('game_over'), url(game_over.ttf) format('ttf')",
+      fontFamily: 'Early GameBoy',
+      src: "local('Early GameBoy'), url(Early GameBoy.ttf) format('ttf')",
     },
 
     '*, *:before, *:after': {
@@ -15,7 +15,7 @@ export default {
     },
 
     body: {
-      fontFamily: 'Minecraft',
+      fontFamily: 'Early GameBoy',
       backgroundColor: 'black',
       color: '#941100',
       fontWeight: 'normal',
@@ -24,11 +24,11 @@ export default {
     },
 
     h1: {
-      margin: ['2rem', 0, '1rem'],
+      margin: ['1rem', 0, '1rem'],
     },
 
     header: {
-      marginBottom: '2rem',
+      marginBottom: '1rem',
     },
 
     a: {
