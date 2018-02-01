@@ -2,7 +2,7 @@ export default {
   // Some global styles
   '@global': {
     html: {
-      fontSize: '48px',
+      fontSize: '36px',
       boxSizing: 'border-box',
     },
     '@font-face': {
@@ -19,7 +19,7 @@ export default {
       backgroundColor: 'black',
       color: '#941100',
       fontWeight: 'normal',
-      fontSize: '2rem',
+      fontSize: '1rem',
       lineHeight: '1.5',
     },
 
@@ -28,7 +28,7 @@ export default {
     },
 
     header: {
-      marginBottom: '1rem',
+      // marginBottom: '1rem',
     },
 
     a: {
@@ -63,7 +63,7 @@ export default {
     padding: '0.4rem',
 
     '& img': {
-      display: 'block',
+      display: 'center',
       maxWidth: '100%',
       height: 'auto',
     },

@@ -52,7 +52,7 @@ class SimpleModal extends Component {
       children,
       sheet: { classes },
     } = this.props;
-    
+
     return (
       <div className={classes.modalOverlay}>
         <div

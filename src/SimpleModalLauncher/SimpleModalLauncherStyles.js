@@ -6,17 +6,17 @@ export default {
   },
   modalButton: {
     fontFamily: 'Early GameBoy',
-    padding: ['0.7rem', '1.8rem'],
-    backgroundColor: '#00d726',
+    padding: ['0.1rem', '0.1rem'],
+    backgroundColor: 'white',
     border: 0,
     borderRadius: '0.3rem',
-    fontSize: '1rem',
+    fontSize: '0.5rem',
     color: 'black',
     cursor: 'pointer',
     marginBottom: '0.8rem',
 
     '&:hover': {
-      backgroundColor: 'white',
+      backgroundColor: 'grey',
     },
   },
 };
