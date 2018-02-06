@@ -1,25 +1,36 @@
-import React from 'react';
+
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 import styles from './IndexStyles';
 import SimpleModalLauncher from './SimpleModalLauncher/SimpleModalLauncher';
-// import WebFont from 'webfontloader';
-
+import Checkout from './Checkout';
 // WebFont.load({
 //   families: ['game_over']
 // });
 const App = ({ sheet: { classes } }) =>
   <div className={classes.appWrapper}>
     <header>
+    <div>  <audio controls="controls"
+      src="https://s3.amazonaws.com/poorgrrrl/SIDE+A.wav" autoPlay>
+      PLAY ME
+      </audio>
+      </div>
       <h1>POORGRRRL</h1>
-      <span>WHY ARE YOU CRYING, POORGRRRL? THINGS CAN'T BE THAT BAD....
-      </span>
-      <div>  <audio controls="controls"
-        src="https://s3.amazonaws.com/poorgrrrl/SIDE+A.wav" autoPlay>
-        PLAY ME
-        </audio>
-        </div>
+      <span>WHY ARE YOU CRYING, POORGRRRL?
+        </span>
+<div className="App">
+      <p className="App-intro">
+      <Checkout
+          name={'PITIPARTY EP'}
+          description={'Six song EP'}
+          amount={1}
+        />
+        <img src="https://s3.amazonaws.com/poorgrrrl/Screen+Shot+2017-07-03+at+1.33.20+AM.png" alt="three" />
+      </p>
+      <p>FOUND <a href="https://parachute.bandcamp.com/album/pitiparti">HERE</a></p>
+    </div>
       <SimpleModalLauncher buttonLabel="OPEN ME">
         <div className={classes.imageModal}>
           <img
@@ -39,13 +50,17 @@ const App = ({ sheet: { classes } }) =>
               src="https://s3.amazonaws.com/poorgrrrl/why.jpg"
               alt="raining titties"
             />
-          </div>EventListener
+          </div>
         </SimpleModalLauncher>('click', this.handleOutsideClick, false);
       }</div>
       <SimpleModalLauncher buttonLabel="TOUCH ME">
         <div className={classes.textModal}>
           <h2>POORGRRRL BRINGS HER NASTY STYLE TO THE WORLD WIDE WEB</h2>
-
+          <Checkout
+            name={'PITIPARTY EP'}
+            description={'Six song EP'}
+            amount={1}
+          />
         </div>
       </SimpleModalLauncher>
 
@@ -83,6 +98,25 @@ const App = ({ sheet: { classes } }) =>
 
 
   </div>;
+  class Pay extends Component {
+  render() {
+    return (
+      <div className="App">
+        <p className="App-intro">
+          <Checkout
+            name={'PITIPARTY EP'}
+            description={'Six song EP'}
+            amount={1}
+          />
+        </p>
+
+        <p>FOUND <a href="https://parachute.bandcamp.com/album/pitiparti">HERE</a>
+
+        </p>
+      </div>
+    );
+  }
+}
 
 App.propTypes = {
   sheet: PropTypes.object,
@@ -91,4 +125,5 @@ App.propTypes = {
 
 const StyledApp = injectSheet(styles)(App);
 
+render (<Pay />, document.getElementById("root"));
 render(<StyledApp />, document.getElementById("root"));
