@@ -2,7 +2,7 @@ export default {
   // Some global styles
   '@global': {
     html: {
-      fontSize: '36px',
+      fontSize: '24px',
       boxSizing: 'border-box',
     },
     '@font-face': {
@@ -24,7 +24,7 @@ export default {
     },
 
     h1: {
-      margin: ['1rem', 0, '1rem'],
+      margin: ['0.5rem', 0, '0.5rem'],
     },
 
     header: {
@@ -48,7 +48,7 @@ export default {
     textAlign: 'center',
     margin: '0.8rem',
     padding: '0.8rem',
-    background: 'white',
+    background: 'black',
 
     '& h2': {
       marginTop: 0,
