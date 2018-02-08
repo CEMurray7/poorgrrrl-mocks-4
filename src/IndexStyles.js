@@ -16,8 +16,8 @@ export default {
 
     body: {
       fontFamily: 'Early GameBoy',
-      backgroundColor: 'black',
-      color: '#941100',
+      backgroundColor: '#313131',
+      color: '#038fd2',
       fontWeight: 'normal',
       fontSize: '1rem',
       lineHeight: '1.5',
@@ -32,11 +32,11 @@ export default {
     },
 
     a: {
-      color: '#941100',
+      color: '#085f89',
     },
 
     'a:hover': {
-      color: '#00bf7f',
+      color: '#989898',
     },
   },
 
@@ -60,7 +60,7 @@ export default {
   },
 
   imageModal: {
-    padding: '0.4rem',
+    padding: '0.2rem',
 
     '& img': {
       display: 'center',

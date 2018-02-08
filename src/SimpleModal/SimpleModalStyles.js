@@ -12,10 +12,10 @@ export default {
     alignItems: 'center',
     justifyContent: 'center',
     position: 'fixed',
-    top: 0,
-    right: 0,
-    left: 0,
-    bottom: 0,
+    top: 100,
+    right: 200,
+    left: 200,
+    bottom: 100,
     padding: '1rem',
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
     zIndex: '9999',
@@ -46,7 +46,7 @@ export default {
     backgroundColor: '#fff',
     boxShadow: [0, 0, '0.625rem', 'rgba(0, 0, 0, 0.2)'],
 
-    '@media (min-width: 576px)': {
+    '@media (min-width: 276px)': {
       width: '16rem',
     },
   },
