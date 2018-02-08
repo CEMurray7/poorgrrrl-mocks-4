@@ -6,8 +6,8 @@ export default {
       boxSizing: 'border-box',
     },
     '@font-face': {
-      fontFamily: 'Early GameBoy',
-      src: "local('Early GameBoy'), url(Early GameBoy.ttf) format('ttf')",
+      fontFamily: 'Apple ][',
+      src: "local('Apple ]['), url(Apple ][.ttf) format('ttf')",
     },
 
     '*, *:before, *:after': {
@@ -15,7 +15,7 @@ export default {
     },
 
     body: {
-      fontFamily: 'Early GameBoy',
+      fontFamily: 'Apple ][',
       backgroundColor: '#313131',
       color: '#038fd2',
       fontWeight: 'normal',

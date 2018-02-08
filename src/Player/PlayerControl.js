@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Player, ControlBar } from 'video-react';
-import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
-
+import { Button } from 'reactstrap';
+// import styles from './IndexStyles';
 // const sources ={
 //   name: url;
 // } to be used if there are multiple sources to be run through
@@ -17,10 +17,11 @@ export default class PlayerControl extends Component {
     this.play = this.play.bind(this);
     this.pause = this.pause.bind(this);
     this.load = this.load.bind(this);
-    this.changeCurrentTime = this.changeCurrentTime.bind(this);
-    this.seek = this.seek.bind(this);
-    this.changeVolume = this.changeVolume.bind(this);
-    this.setMuted = this.setMuted.bind(this);
+    // this.changeCurrentTime = this.changeCurrentTime.bind(this);
+    // this.seek = this.seek.bind(this);
+    // this.changeVolume = this.changeVolume.bind(this);
+    // this.setMuted = this.setMuted.bind(this);
+    //TO BE USED IF I WANT TO ALLOW VISITORS TO CHANGE VOLUME OR SEEK THROUGH THE VIDEO
   }
 
   componentDidMount() {
@@ -53,16 +54,11 @@ export default class PlayerControl extends Component {
       <ControlBar autohide={false} />
       </Player>
       <div className='py-3'>
-      <Button onClick={this.play} className="mr-3">play()</Button>
-      <Button onClick={this.pause} className="mr-3">pause()</Button>
-      <Button onClicke={this.load} className="mr-3">load()</Button>
+      <Button onClick={this.play} className="mr-3">play</Button>
+      <Button onClick={this.pause} className="mr-3">pause</Button>
+      <Button onClick={this.load} className="mr-3">load</Button>
       </div>
-      <div className="pb-3">
-      <Button oncClick={this.changeVolume(0.1)} className="mr-3">volume+=0.1</Button>
-      <Button onClick={this.changeVolume(-0.1)} className="mr-3">volume-=</Button>
-      <Button onClick={this.setMuted(true)} className="mr-3">muted=true</Button>
-      <Button onClick={this.setMuted(false)} className="mr-3">muted=false</Button>
-      </div>
+
       </div>
     );
   }

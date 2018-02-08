@@ -21,7 +21,7 @@ class SimpleModalLauncher extends Component {
     const { showModal } = this.state;
 
     return (
-      <div>
+      <div className="uniqueButton">
         <button
           type="button"
           className={classes.modalButton}
