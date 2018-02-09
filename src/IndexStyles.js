@@ -2,12 +2,13 @@ export default {
   // Some global styles
   '@global': {
     html: {
-      fontSize: '24px',
+      fontFamily: 'Apple',
+      fontSize: '36px',
       boxSizing: 'border-box',
     },
     '@font-face': {
-      fontFamily: 'Apple ][',
-      src: "local('Apple ]['), url(Apple ][.ttf) format('ttf')",
+      fontFamily: 'Apple',
+      src: "local('Apple'), url(Apple.ttf) format('ttf')",
     },
 
     '*, *:before, *:after': {
@@ -15,12 +16,19 @@ export default {
     },
 
     body: {
-      fontFamily: 'Apple ][',
-      backgroundColor: '#313131',
-      color: '#038fd2',
+      display: 'flex',
+      flexWrap: 'wrap',
+      fontFamily: 'Apple',
+      backgroundColor: 'white',
+      color: '#00c925',
+      color: 'black',
       fontWeight: 'normal',
       fontSize: '1rem',
       lineHeight: '1.5',
+    },
+    h2: {
+      margin: '0',
+      padding: '0',
     },
 
     h1: {
@@ -48,10 +56,18 @@ export default {
     textAlign: 'center',
     margin: '0.8rem',
     padding: '0.8rem',
-    background: 'black',
+    background: 'white',
 
     '& h2': {
       marginTop: 0,
+    },
+     '& div': {
+      margin: '0',
+      padding: '0',
+      // display: 'flex',
+      // flexWrap: 'wrap',
+      // maxWidth: '30%',
+      // boxSizing: 'borderBox',
     },
 
     '& p': {
@@ -59,6 +75,12 @@ export default {
     },
   },
 
+  'uniqueButton': {
+    display: 'flex',
+    flexWrap: 'wrap',
+    boxSizing: 'borderBox',
+    width: '30%',
+  },
   imageModal: {
     padding: '0.2rem',
 

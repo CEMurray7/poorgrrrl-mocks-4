@@ -28,7 +28,7 @@ export default {
   // Fade in open animation
   '@keyframes show': {
     '0%': {
-      display: 'none',
+      display: 'block',
       opacity: 0,
     },
     '1%': {

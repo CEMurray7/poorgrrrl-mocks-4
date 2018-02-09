@@ -7,11 +7,11 @@ import { Button } from 'reactstrap';
 // } to be used if there are multiple sources to be run through
 
 export default class PlayerControl extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
 
     this.state = {
-      source: 'https://s3.amazonaws.com/poorgrrrl/noiseconference2018.mov'
+      source: 'https://s3.amazonaws.com/poorgrrrl/noise.mov'
     };
 
     this.play = this.play.bind(this);
@@ -50,7 +50,7 @@ export default class PlayerControl extends Component {
       <Player
       ref='player'
       autoPlay >
-      <source src='https://s3.amazonaws.com/poorgrrrl/noiseconference2018.mov' />
+      <source src='https://s3.amazonaws.com/poorgrrrl/noise.mov' />
       <ControlBar autohide={false} />
       </Player>
       <div className='py-3'>
