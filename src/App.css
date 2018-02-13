@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Apple';
-  src: local('Apple'), url(Apple.ttf) format('ttf')
+  src: local('Apple'), url(/Apple.ttf) format('ttf')
 }
 body {
   display: flex;
@@ -14,6 +14,19 @@ body {
 p {
   display: inline-flex;
 }
+
+@keyframes headBob {
+  0%   { transform: rotate(45deg); }
+  100% { transform: rotate(-45deg); }
+}
+ img {
+  animation-name: headBob;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 
 .uniqueButton {
   flex-wrap: wrap;

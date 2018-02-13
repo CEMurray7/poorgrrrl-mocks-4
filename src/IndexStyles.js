@@ -15,6 +15,18 @@ export default {
       boxSizing: 'inherit',
     },
 
+    '@keyframes': {
+      '0%': { transform: 'rotate(45deg)'},
+      '100%': { transform: 'rotate(45deg)'},
+
+    },
+    img: {
+      animationName: 'headBob',
+      animationDuration: '1s',
+      animationTimingFunction: 'linear',
+      animationIterationCount: 'infinite',
+      animationDirection: 'alternate',
+    },
     body: {
       display: 'flex',
       flexWrap: 'wrap',

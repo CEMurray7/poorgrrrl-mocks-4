@@ -1,6 +1,6 @@
 import express from 'express';
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import { render } from 'react-dom';
 import { renderToString } from 'react-dom/server';
 import App from './index';
 import template from './template';
